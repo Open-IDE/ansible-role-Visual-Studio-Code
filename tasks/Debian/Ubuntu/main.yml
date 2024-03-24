@@ -1,0 +1,17 @@
+---
+# from: https://code.visualstudio.com/download
+
+- include_tasks: "fn/which.yml"
+
+- name: Download .deb package
+  ansible.builtin.get_url:
+    url: "{{ debian_download_url }}"
+    dest: "{{ download_dir }}/code.deb"
+    mode: '0744'
+  when: not which.rc == 0
+
+- name: Install .deb package
+  ansible.builtin.apt:
+    deb: "{{ download_dir }}/code.deb"
+  when: not which.rc == 0
+  become: true
