@@ -1,0 +1,24 @@
+---
+# from: https://wiki.archlinux.org/title/Visual_Studio_Code
+# https://wiki.archlinux.org/title/Ansible#AUR
+
+- name: Install Code
+  community.general.pacman:
+    name: code
+    state: present
+  become: true
+  when: archlinux_flavor == "Code"
+
+- name: Install Visual Studio Code from AUR
+  kewlfft.aur.aur:
+    use: yay
+    name:
+      - visual-studio-code-bin
+  when: archlinux_flavor == "Visual Studio Code"
+
+- name: Install VSCodium from AUR
+  kewlfft.aur.aur:
+    use: yay
+    name:
+      - vscodium
+  when: archlinux_flavor == "VSCodium"

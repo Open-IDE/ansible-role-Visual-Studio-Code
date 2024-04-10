@@ -1,2 +1,6 @@
 ---
 # defaults file for Visual-Studio-Code
+
+archlinux_flavor: Code
+# choices: Code, Visual Studio Code, VSCodium
+# from: https://wiki.archlinux.org/title/Visual_Studio_Code
