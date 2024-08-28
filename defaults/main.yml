@@ -4,3 +4,7 @@
 archlinux_flavor: Code
 # choices: Code, Visual Studio Code, VSCodium
 # from: https://wiki.archlinux.org/title/Visual_Studio_Code
+
+Zorin_OS_default_source: Flatpak
+
+debug: false
