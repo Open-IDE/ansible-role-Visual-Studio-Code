@@ -5,4 +5,3 @@
     use: yay
     name:
       - vscodium
-  when: archlinux_flavor == "VSCodium"

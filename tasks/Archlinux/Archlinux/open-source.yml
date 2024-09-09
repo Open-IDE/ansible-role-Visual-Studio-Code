@@ -5,4 +5,3 @@
     name: code
     state: present
   become: true
-  when: archlinux_flavor == "Code"
