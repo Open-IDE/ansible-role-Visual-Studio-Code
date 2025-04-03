@@ -1,7 +1,7 @@
 ---
 # defaults file for Visual-Studio-Code
 
-archlinux_version: Microsoft #open-source, VSCodium
+archlinux_version: open-source #Microsoft, VSCodium
 # choices: Code, Visual Studio Code, VSCodium
 # from: https://wiki.archlinux.org/title/Visual_Studio_Code
 

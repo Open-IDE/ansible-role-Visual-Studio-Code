@@ -1,6 +1,6 @@
 ---
 
-- name: Install Code
+- name: install Code OSS
   community.general.pacman:
     name: code
     state: present
